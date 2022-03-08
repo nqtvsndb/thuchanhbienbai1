@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Nhập điểm" id="t1"> +
+<input type="number" placeholder="Nhập điểm" id="t2"> +
+<input type="number" placeholder="Nhập điểm" id="t3">
+<button onclick="operator()">=</button>
+<br>
+<br>
+<div>
+    <span style="font-size: 20px">Kết quả :</span>
+    <span id="Kết quả"></span>
+</div>
+<script>
+    let t1 = document.getElementById('t1')
+    let t2 = document.getElementById('t2')
+    let t3 = document.getElementById('t3')
+    function operator () {
+        let aaa = (parseInt(t1.value) + parseInt(t2.value) + parseInt(t3.value)) / 3
+        document.getElementById('kq').innerHTML = aaa
+    }
+
+</script>
+</body>
+</html>
